@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zx.lockscreen">
+
+    <!-- 解锁屏幕需要的权限 -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <!-- 申请电源锁需要的权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- 振动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!--wifi及网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>-->
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.zx.lockscreen.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zx.lockscreen.activity.MessageActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:taskAffinity="" />
+
+        <receiver
+            android:name="com.zx.lockscreen.LockScreenMsgReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+
+                <!-- 监听锁屏消息 -->
+                <action android:name="com.zx.lockscreen.LockScreenMsgReceiver" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.zx.lockscreen.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="com.zx.lockscreen.activity.DetailsActivity"></activity>
+        <activity android:name="com.zx.lockscreen.customview.WheelAnimationActivity"></activity>
+        <activity android:name="com.zx.lockscreen.customview.LoadingAnimationActivity"></activity>
+        <activity android:name="com.zx.lockscreen.customview.CircleProgressActivity"></activity>
+        <activity android:name="com.zx.lockscreen.customview.ColorArcProgressBarActivity"></activity>
+        <activity android:name="com.zx.lockscreen.phonestate.PhoneStateActivity"></activity>
+        <activity android:name="com.zx.lockscreen.phonestate.PhoneNetworkActivity"></activity>
+        <activity android:name="com.zx.lockscreen.ble.BleActivity"></activity>
+
+
+        <receiver
+            android:name=".ble.BleBroadcast2"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.bluetooth.device.action.BOND_STATE_CHANGED"></action>
+                <action android:name="android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED"></action>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

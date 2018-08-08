@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProgressWheel">
+        <attr name="pwText" format="string" />
+        <attr name="pwTextColor" format="color" />
+        <attr name="pwTextSize" format="dimension" />
+        <attr name="pwBarColor" format="color" />
+        <attr name="pwRimColor" format="color" />
+        <attr name="pwRimWidth" format="dimension" />
+        <attr name="pwSpinSpeed" format="dimension" />
+        <attr name="pwDelayMillis" format="integer" />
+        <attr name="pwCircleColor" format="color" />
+        <attr name="pwRadius" format="dimension" />
+        <attr name="pwBarWidth" format="dimension" />
+        <attr name="pwBarLength" format="dimension" />
+        <attr name="pwContourColor" format="color" />
+        <attr name="pwContourSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="a_zhon">
+        <!--每条线的粗细-->
+        <attr name="paintBold" format="dimension" />
+        <!--每条线的长度-->
+        <attr name="lineLength" format="dimension" />
+        <!--线条个数-->
+        <attr name="lines" format="integer" />
+        <!--最大进度-->
+        <attr name="max" format="integer" />
+        <!--当前进度-->
+        <attr name="progress" format="integer" />
+        <!--背景菊花颜色-->
+        <attr name="backgroundColor" format="reference|color" />
+        <!--前景菊花颜色-->
+        <attr name="beforeColor" format="reference|color" />
+        <!--进度文字颜色-->
+        <attr name="textColor" format="reference|color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ColorArcProgressBar">
+        <attr name="back_color" format="color" />
+        <attr name="front_color1" format="color" />
+        <attr name="front_color2" format="color" />
+        <attr name="front_color3" format="color" />
+        <attr name="back_width" format="dimension" />
+        <attr name="front_width" format="dimension" />
+        <attr name="is_need_title" format="boolean" />
+        <attr name="is_need_content" format="boolean" />
+        <attr name="is_need_unit" format="boolean" />
+        <attr name="is_need_dial" format="boolean" />
+        <attr name="string_title" format="string" />
+        <attr name="string_unit" format="string" />
+        <attr name="total_engle" format="integer" />
+        <attr name="current_value" format="float" />
+        <attr name="max_value" format="float" />
+        <attr name="start_color" format="color" />
+        <attr name="end_color" format="color" />
+        <attr name="bg_arc_color" format="color" />
+        <attr name="h_color" format="color" />
+        <attr name="is_need_des_text" format="boolean" />
+        <attr name="des_text" format="string" />
+
+    </declare-styleable>
+
+</resources>

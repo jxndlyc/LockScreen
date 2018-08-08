@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zx.lockscreen.activity.MainActivity">
+
+    <Button
+        android:id="@+id/testButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="动态注册" />
+
+    <Button
+        android:id="@+id/testButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/testButton1"
+        android:layout_marginTop="10dp"
+        android:text="发送动态注册的广播信息" />
+
+    <Button
+        android:id="@+id/testButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/testButton2"
+        android:layout_marginTop="10dp"
+        android:text="发送静态注册的广播信息" />
+
+    <Button
+        android:id="@+id/testButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/testButton3"
+        android:layout_marginTop="10dp"
+        android:text="解除动态绑定的广播接收者" />
+
+    <Button
+        android:id="@+id/testButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/testButton4"
+        android:layout_marginTop="10dp"
+        android:text="实现不响应静态注册的广播" />
+
+    <Button
+        android:id="@+id/testButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/testButton5"
+        android:layout_marginTop="10dp"
+        android:text="重新激活静态广播接收者" />
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ColorArcProgressBar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start"
+            android:visibility="gone" />
+
+        <com.zx.lockscreen.customview.ColorArcProgressBar
+            android:id="@+id/bar1"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="150dp"
+            android:visibility="gone"
+            ColorArcProgressBar:back_color="@android:color/darker_gray"
+            ColorArcProgressBar:back_width="10dp"
+            ColorArcProgressBar:front_color1="@color/colorAccent"
+            ColorArcProgressBar:front_width="10dp"
+            ColorArcProgressBar:is_need_content="true"
+            ColorArcProgressBar:is_need_unit="true"
+            ColorArcProgressBar:max_value="100"
+            ColorArcProgressBar:string_unit="百分比%"
+            ColorArcProgressBar:total_engle="360" />
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start" />
+
+        <com.zx.lockscreen.customview.ColorArcProgressBar
+            android:id="@+id/bar2"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="150dp"
+            ColorArcProgressBar:back_color="#DDDDDD"
+            ColorArcProgressBar:back_width="5dp"
+            ColorArcProgressBar:front_color1="#69cbd2"
+            ColorArcProgressBar:front_color2="#7eb6e2"
+            ColorArcProgressBar:front_color3="#989df7"
+            ColorArcProgressBar:front_width="5dp"
+            ColorArcProgressBar:is_need_content="true"
+            ColorArcProgressBar:is_need_des_text="true"
+            ColorArcProgressBar:is_need_title="true"
+            ColorArcProgressBar:is_need_unit="true"
+            ColorArcProgressBar:max_value="100"
+            ColorArcProgressBar:string_title="优秀"
+            ColorArcProgressBar:string_unit="您的手机网络信号"
+            ColorArcProgressBar:total_engle="270"
+            ColorArcProgressBar:des_text="分"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start"
+            android:visibility="gone" />
+
+        <com.zx.lockscreen.customview.ColorArcProgressBar
+            android:id="@+id/bar3"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="150dp"
+            android:visibility="gone"
+            ColorArcProgressBar:back_color="@android:color/darker_gray"
+            ColorArcProgressBar:back_width="2dp"
+            ColorArcProgressBar:front_color1="#00ff00"
+            ColorArcProgressBar:front_color2="#ffff00"
+            ColorArcProgressBar:front_color3="#ff0000"
+            ColorArcProgressBar:front_width="10dp"
+            ColorArcProgressBar:is_need_content="true"
+            ColorArcProgressBar:is_need_dial="true"
+            ColorArcProgressBar:is_need_title="true"
+            ColorArcProgressBar:is_need_unit="true"
+            ColorArcProgressBar:max_value="100"
+            ColorArcProgressBar:string_title="当前速度"
+            ColorArcProgressBar:string_unit="km/h"
+            ColorArcProgressBar:total_engle="270" />
+
+    </LinearLayout>
+
+</ScrollView>

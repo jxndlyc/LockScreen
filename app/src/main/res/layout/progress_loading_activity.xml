@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:a_zhon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+
+    <com.zx.lockscreen.customview.LoadingView
+        android:id="@+id/loading_view_custom"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        a_zhon:backgroundColor="#9f9c9c"
+        a_zhon:beforeColor="#1dcdef"
+        a_zhon:lineLength="10dp"
+        a_zhon:lines="60"
+        a_zhon:max="100"
+        a_zhon:paintBold="3dp"
+        a_zhon:progress="70" />
+
+    <SeekBar
+        android:id="@+id/progressAmount"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loading_view_custom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/btn_increment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressAmount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="执行动画" />
+
+</RelativeLayout>
