@@ -15,6 +15,7 @@ import com.zx.lockscreen.customview.ColorArcProgressBarActivity;
 import com.zx.lockscreen.customview.LoadingAnimationActivity;
 import com.zx.lockscreen.customview.WheelAnimationActivity;
 import com.zx.lockscreen.phonestate.PhoneNetworkActivity;
+import com.zx.lockscreen.popmenu.PopMenuActivity;
 import com.zx.lockscreen.simplecache.ACache;
 
 /**
@@ -104,6 +105,14 @@ public class MainActivity extends AppCompatActivity {
                     Log.e("liuyuchuan", "id:" + bleKeyInfo.getId() + ", token:" + bleKeyInfo.getBle_token() + ", secret:" + bleKeyInfo.getSecret());
                 }
 
+            }
+        });
+
+        findViewById(R.id.start_pop_menu).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, PopMenuActivity.class);
+                startActivity(intent); //启动动画
             }
         });
     }

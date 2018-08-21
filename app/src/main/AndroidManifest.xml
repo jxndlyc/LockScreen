@@ -70,6 +70,7 @@
         <activity android:name="com.zx.lockscreen.phonestate.PhoneStateActivity"></activity>
         <activity android:name="com.zx.lockscreen.phonestate.PhoneNetworkActivity"></activity>
         <activity android:name="com.zx.lockscreen.ble.BleActivity"></activity>
+        <activity android:name="com.zx.lockscreen.popmenu.PopMenuActivity"></activity>
 
 
         <receiver
